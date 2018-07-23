@@ -170,7 +170,8 @@ fun isInstalled(context: Context, platform: RSharePlatform) : Boolean {
         RSharePlatform.Sina -> packageName = "com.sina.weibo"
         RSharePlatform.Instagram -> packageName = "com.instagram.android"
         RSharePlatform.WhatsApp -> packageName = "com.whatsapp"
-        RSharePlatform.QQ -> "com.tencent.mobileqq"
+        RSharePlatform.QQ -> packageName = "com.tencent.mobileqq"
+        RSharePlatform.Line -> packageName = "jp.naver.line.android"
 
     }
     val pm = context.packageManager

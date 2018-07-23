@@ -9,5 +9,6 @@ enum class RSharePlatform {
     Tumblr,
     GooglePlus,
     WhatsApp,
-    Instagram
+    Instagram,
+    Line
 }

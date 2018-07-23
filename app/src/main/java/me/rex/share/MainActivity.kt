@@ -15,6 +15,7 @@ import me.rex.sdk.RShareCallback
 import me.rex.sdk.facebook.RFacebookManager
 import me.rex.sdk.googleplus.RGooglePlusManager
 import me.rex.sdk.instagram.RInstagramManager
+import me.rex.sdk.line.RLineManager
 import me.rex.sdk.qq.RQqManager
 import me.rex.sdk.sina.RSinaWeiboManager
 import me.rex.sdk.tumblr.RTumblrManager
@@ -207,6 +208,12 @@ class MainActivity : AppCompatActivity() {
                         mWebpageUrl,mShareCallback )
             }
 
+            R.id.l_text_btn -> {
+                RLineManager.instance.share(this, mDescription)
+            }
+            R.id.l_img_btn -> {
+                RLineManager.instance.share(this, mPhoto)
+            }
         }
 
     }

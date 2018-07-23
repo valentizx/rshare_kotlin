@@ -72,7 +72,7 @@ class RQZoneActivity : Activity() {
             ShareContentType.Webpage -> share(mHelper.qZoneWebpageParams)
             ShareContentType.Photo -> publish(mHelper.qZoneImagesParams)
             ShareContentType.Video -> publish(mHelper.qZoneVideoParams)
-
+            else -> return
 
         }
 
