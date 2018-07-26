@@ -10,5 +10,6 @@ enum class RSharePlatform {
     GooglePlus,
     WhatsApp,
     Instagram,
-    Line
+    Line,
+    Pinterest
 }

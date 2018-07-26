@@ -41,6 +41,8 @@ dependencies {
     implementation files('libs/FlurryAds-6.1.0.jar')
     implementation files('libs/FlurryAnalytics-6.1.0.jar')
     implementation files('libs/open_sdk_r6008_lite.jar')
+    implementation ('com.mcxiaoke.volley:library:1.0.+')
+
 }
 repositories {
     mavenCentral()
