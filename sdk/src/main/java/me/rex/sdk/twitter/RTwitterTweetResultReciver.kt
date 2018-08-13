@@ -4,8 +4,8 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import com.twitter.sdk.android.tweetcomposer.TweetUploadService
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareState
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareState
 import me.rex.sdk.util.deleteExternalShareDir
 
 class RTwitterTweetResultReciver : BroadcastReceiver() {

@@ -12,9 +12,9 @@ import com.facebook.share.model.ShareLinkContent
 import com.facebook.share.model.SharePhotoContent
 import com.facebook.share.model.ShareVideoContent
 import com.facebook.share.widget.ShareDialog
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareContentType
-import me.rex.sdk.ShareState
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareContentType
+import me.rex.sdk.share.ShareState
 import me.rex.sdk.util.deleteExternalShareDir
 
 private const val TAG = "RFacebookActivity"

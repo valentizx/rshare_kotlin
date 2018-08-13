@@ -11,10 +11,10 @@ import com.tencent.mm.opensdk.modelbase.BaseResp
 import com.tencent.mm.opensdk.openapi.IWXAPI
 import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler
 import com.tencent.mm.opensdk.openapi.WXAPIFactory
-import me.rex.sdk.RShare
-import me.rex.sdk.RShareCallback
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareState
+import me.rex.sdk.share.RShare
+import me.rex.sdk.share.RShareCallback
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareState
 import me.rex.sdk.util.getPath
 import me.rex.sdk.util.getWechatAppId
 import me.rex.sdk.util.isInstalled

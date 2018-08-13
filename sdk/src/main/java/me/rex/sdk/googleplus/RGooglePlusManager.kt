@@ -3,7 +3,7 @@ package me.rex.sdk.googleplus
 import android.content.Context
 import android.net.Uri
 import com.google.android.gms.plus.PlusShare
-import me.rex.sdk.RShare
+import me.rex.sdk.share.RShare
 
 class RGooglePlusManager private constructor(): RShare() {
     companion object {

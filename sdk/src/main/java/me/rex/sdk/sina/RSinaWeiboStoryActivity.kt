@@ -6,9 +6,9 @@ import android.content.Intent
 import android.os.Bundle
 import com.sina.weibo.sdk.share.WbShareCallback
 import com.sina.weibo.sdk.share.WbShareHandler
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareContentType
-import me.rex.sdk.ShareState
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareContentType
+import me.rex.sdk.share.ShareState
 import me.rex.sdk.util.deleteExternalShareDir
 
 class RSinaWeiboStoryActivity : Activity(), WbShareCallback {

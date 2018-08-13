@@ -5,10 +5,10 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
 import android.util.Log
-import me.rex.sdk.RShare
-import me.rex.sdk.RShareCallback
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareContentType
+import me.rex.sdk.share.RShare
+import me.rex.sdk.share.RShareCallback
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareContentType
 import me.rex.sdk.util.*
 
 

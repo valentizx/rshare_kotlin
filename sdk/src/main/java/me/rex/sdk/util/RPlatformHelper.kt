@@ -1,7 +1,7 @@
 package me.rex.sdk.util
 
 import android.content.Context
-import me.rex.sdk.RSharePlatform
+import me.rex.sdk.share.RSharePlatform
 import org.w3c.dom.Document
 import org.w3c.dom.Element
 import org.xml.sax.SAXException

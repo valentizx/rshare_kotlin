@@ -7,9 +7,9 @@ import android.net.Uri
 import android.os.Build
 import android.support.v4.content.FileProvider
 import android.util.Log
-import me.rex.sdk.Mode
-import me.rex.sdk.RShare
-import me.rex.sdk.RSharePlatform
+import me.rex.sdk.share.Mode
+import me.rex.sdk.share.RShare
+import me.rex.sdk.share.RSharePlatform
 import me.rex.sdk.util.*
 
 private const val TAG = "RInstagramManager==>"

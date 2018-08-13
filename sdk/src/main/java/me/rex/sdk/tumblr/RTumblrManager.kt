@@ -2,9 +2,9 @@ package me.rex.sdk.tumblr
 
 import android.content.Context
 import android.content.Intent
-import me.rex.sdk.RShare
-import me.rex.sdk.RShareCallback
-import me.rex.sdk.ShareContentType
+import me.rex.sdk.share.RShare
+import me.rex.sdk.share.RShareCallback
+import me.rex.sdk.share.ShareContentType
 
 class RTumblrManager private constructor() : RShare() {
     companion object {

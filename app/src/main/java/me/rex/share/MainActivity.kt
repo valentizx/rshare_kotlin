@@ -1,7 +1,6 @@
 package me.rex.share
 
 import android.content.Intent
-import android.content.pm.PackageInstaller
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -10,14 +9,15 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.tencent.mm.opensdk.utils.Log
-import me.rex.sdk.Mode
-import me.rex.sdk.RShareCallback
+import me.rex.sdk.share.Mode
+import me.rex.sdk.share.RShareCallback
 import me.rex.sdk.facebook.RFacebookManager
 import me.rex.sdk.googleplus.RGooglePlusManager
 import me.rex.sdk.instagram.RInstagramManager
 import me.rex.sdk.line.RLineManager
 import me.rex.sdk.pinterest.RPinterestManager
 import me.rex.sdk.qq.RQqManager
+import me.rex.sdk.share.RImageContent
 import me.rex.sdk.sina.RSinaWeiboManager
 import me.rex.sdk.tumblr.RTumblrManager
 import me.rex.sdk.twitter.RTwitterManager
@@ -74,6 +74,7 @@ class MainActivity : AppCompatActivity() {
         mPhoto = BitmapFactory.decodeResource(resources, R.drawable.c_1)
 
         Log.e("散列",RFacebookManager.instance.printKeyHash(this))
+
     }
 
     fun share(view : View) {
@@ -98,12 +99,12 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.tw_app_btn -> {
                 RTwitterManager.instance.share(this, mWebpageUrl, mDescription, mPhoto,
-                        mHashTag,Mode.Automatic,mShareCallback )
+                        mHashTag, Mode.Automatic,mShareCallback )
             }
 
             R.id.tw_inner_btn -> {
                 RTwitterManager.instance.share(this, mWebpageUrl, mDescription, mPhoto,
-                        mHashTag,Mode.Native, mShareCallback )
+                        mHashTag, Mode.Native, mShareCallback )
             }
             R.id.ins_app_btn -> {
                 RInstagramManager.instance.shareImage(this, mPhoto, Mode.Native)

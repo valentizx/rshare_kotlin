@@ -5,7 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import com.facebook.share.model.*
 import com.facebook.share.widget.ShareDialog
-import me.rex.sdk.Mode
+import me.rex.sdk.share.Mode
 import me.rex.sdk.util.getExternalSharePathBitmaps
 
 

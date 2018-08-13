@@ -9,7 +9,7 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.util.Base64
 import android.util.Log
-import me.rex.sdk.*
+import me.rex.sdk.share.*
 import me.rex.sdk.util.deleteExternalShareDir
 import me.rex.sdk.util.isInstalled
 import me.rex.sdk.util.saveBitmapToExternalSharePath

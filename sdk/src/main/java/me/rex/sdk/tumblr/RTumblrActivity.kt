@@ -6,10 +6,10 @@ import com.flurry.android.FlurryAgent
 import com.flurry.android.tumblr.Post
 import com.flurry.android.tumblr.PostListener
 import com.flurry.android.tumblr.TumblrShare
-import me.rex.sdk.RShareCallback
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareContentType
-import me.rex.sdk.ShareState
+import me.rex.sdk.share.RShareCallback
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareContentType
+import me.rex.sdk.share.ShareState
 import me.rex.sdk.util.getTumblrConsumerKey
 import me.rex.sdk.util.getTumblrConsumerSecret
 import me.rex.sdk.util.getTumblrFlurryKey

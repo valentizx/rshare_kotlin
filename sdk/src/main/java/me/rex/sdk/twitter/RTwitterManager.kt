@@ -4,12 +4,11 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
-import android.os.StrictMode
 import android.util.Log
 import com.twitter.sdk.android.core.*
 import com.twitter.sdk.android.tweetcomposer.ComposerActivity
 import com.twitter.sdk.android.tweetcomposer.TweetComposer
-import me.rex.sdk.*
+import me.rex.sdk.share.*
 import me.rex.sdk.util.*
 import java.net.MalformedURLException
 import java.net.URL
@@ -120,9 +119,9 @@ class RTwitterManager private constructor() : RShare() {
 
     fun share(context: Context,
               webpageUrl : String?,
-              text : String? ,
-              image : Bitmap? ,
-              hashTag : String? ,
+              text : String?,
+              image : Bitmap?,
+              hashTag : String?,
               mode: Mode,
               callback: RShareCallback?) {
 

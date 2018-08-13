@@ -7,9 +7,9 @@ import com.tencent.connect.common.Constants
 import com.tencent.tauth.IUiListener
 import com.tencent.tauth.Tencent
 import com.tencent.tauth.UiError
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareContentType
-import me.rex.sdk.ShareState
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareContentType
+import me.rex.sdk.share.ShareState
 import me.rex.sdk.util.deleteExternalShareDir
 import me.rex.sdk.util.getQQAppId
 import me.rex.sdk.util.mainHandler

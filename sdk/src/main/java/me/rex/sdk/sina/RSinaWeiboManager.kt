@@ -9,10 +9,10 @@ import android.util.Log
 import com.sina.weibo.sdk.WbSdk
 import com.sina.weibo.sdk.auth.AuthInfo
 import com.sina.weibo.sdk.share.WbShareHandler
-import me.rex.sdk.RShare
-import me.rex.sdk.RShareCallback
-import me.rex.sdk.RSharePlatform
-import me.rex.sdk.ShareContentType
+import me.rex.sdk.share.RShare
+import me.rex.sdk.share.RShareCallback
+import me.rex.sdk.share.RSharePlatform
+import me.rex.sdk.share.ShareContentType
 import me.rex.sdk.util.*
 
 
