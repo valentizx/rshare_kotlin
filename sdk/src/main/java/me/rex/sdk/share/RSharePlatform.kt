@@ -1,4 +1,4 @@
-package me.rex.sdk
+package me.rex.sdk.share
 
 enum class RSharePlatform {
     Facebook,
