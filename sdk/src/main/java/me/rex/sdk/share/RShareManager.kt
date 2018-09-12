@@ -31,8 +31,7 @@ enum class ShareChannel {
     SinaWeibo,
     SinaWeiboStory,
     Line,
-    InstagramSystem,
-    InstagramClient,
+    Instagram,
     Tumblr,
     Pinterest,
     GooglePlus,
@@ -95,7 +94,7 @@ class RShareManager private constructor() {
             ShareChannel.SinaWeiboStory -> RSinaWeiboManager.instance.shareLocalVideo(context, content
                     .localVideoUrl, content.quote, true, callback)
 
-            ShareChannel.InstagramSystem -> RInstagramManager.instance.shareVideo(context,
+            ShareChannel.Instagram -> RInstagramManager.instance.shareVideo(context,
                     content.localVideoUrl)
             else -> Log.e(TAG, "该种方式不支持视频分享")
         }
@@ -131,10 +130,8 @@ class RShareManager private constructor() {
             ShareChannel.SinaWeiboStory -> RSinaWeiboManager.instance.sharePhoto(context, img, content
                     .quote, true, callback)
             ShareChannel.Line -> RLineManager.instance.share(context, content.image)
-            ShareChannel.InstagramClient -> RInstagramManager.instance.shareImage(context,
-                    content.image, Mode.Automatic)
-            ShareChannel.InstagramSystem -> RInstagramManager.instance.shareImage(context,
-                    content.image, Mode.System)
+            ShareChannel.Instagram -> RInstagramManager.instance.shareImage(context,
+                    content.image)
             ShareChannel.Tumblr -> if (!content.imageUrl.isNullOrBlank())  RTumblrManager.instance.shareImage(context, content.imageUrl, content.quote,
                     content.webpageUrl, callback) else print("参数不正确")
             ShareChannel.Pinterest -> if (!content.imageUrl.isNullOrBlank()) RPinterestManager

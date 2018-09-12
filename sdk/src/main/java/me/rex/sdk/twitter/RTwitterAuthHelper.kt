@@ -9,6 +9,7 @@ class RTwitterAuthHelper private constructor(){
 
     companion object {
         val instance : RTwitterAuthHelper get() = Inner.instance
+
     }
     private object Inner {
         val instance = RTwitterAuthHelper()

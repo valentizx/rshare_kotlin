@@ -9,15 +9,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.tencent.mm.opensdk.utils.Log
-import me.rex.sdk.share.Mode
-import me.rex.sdk.share.RShareCallback
 import me.rex.sdk.facebook.RFacebookManager
 import me.rex.sdk.googleplus.RGooglePlusManager
 import me.rex.sdk.instagram.RInstagramManager
 import me.rex.sdk.line.RLineManager
 import me.rex.sdk.pinterest.RPinterestManager
 import me.rex.sdk.qq.RQqManager
-import me.rex.sdk.share.RImageContent
+import me.rex.sdk.share.*
 import me.rex.sdk.sina.RSinaWeiboManager
 import me.rex.sdk.tumblr.RTumblrManager
 import me.rex.sdk.twitter.RTwitterManager
@@ -75,6 +73,7 @@ class MainActivity : AppCompatActivity() {
 
         Log.e("散列",RFacebookManager.instance.printKeyHash(this))
 
+
     }
 
     fun share(view : View) {
@@ -84,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
             R.id.fb_wb_btn -> {
                 RFacebookManager.instance.shareWebpage(this, mWebpageUrl, mDescription,
-                        mHashTag, Mode.Native, mShareCallback)
+                        mHashTag, Mode.Feed, mShareCallback)
             }
             R.id.fb_ph_btn -> {
                 val photos = ArrayList<Bitmap>()
@@ -107,11 +106,11 @@ class MainActivity : AppCompatActivity() {
                         mHashTag, Mode.Native, mShareCallback )
             }
             R.id.ins_app_btn -> {
-                RInstagramManager.instance.shareImage(this, mPhoto, Mode.Native)
+                RInstagramManager.instance.shareImage(this, mPhoto)
             }
 
             R.id.ins_sys_btn -> {
-                RInstagramManager.instance.shareImage(this, mPhoto, Mode.System)
+                RInstagramManager.instance.shareImage(this, mPhoto)
             }
             R.id.ins_vid_btn -> {
                 flag = Instagram
@@ -248,7 +247,7 @@ class MainActivity : AppCompatActivity() {
 
         if (data == null) return
 
-        val uri : Uri? = data?.data
+        val uri : Uri? = data.data
         if (requestCode == PICK_VIDEO_REQUEST_CODE) {
 
             when (flag) {
@@ -264,7 +263,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 Sina -> {
                     uri?.let {
-                        RSinaWeiboManager.instance.shareLocalVideo(this, uri, mDescription, false,
+                        RSinaWeiboManager.instance.shareLocalVideo(this, uri, mDescription, true,
                                 mShareCallback)
                     }
                 }
@@ -283,11 +282,8 @@ class MainActivity : AppCompatActivity() {
                         RWechatManager.instance.shareFile(this, uri, mTitle, mPhoto,
                                 RWechatManager.TargetScene.Session, mShareCallback)
                     }
-
                 }
             }
         }
     }
-
-
 }
